@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url("https://sb.ecobnb.net/app/uploads/sites/3/2022/04/copertina-1.jpg") center/cover no-repeat fixed;
+    
+    flex: 0 0 10%;
+    height: 100%;
+}
+
+.header__title {
+    color: #ffffff;
+    font-size: 1.5em;
+}  
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.header__nav-item {
+    margin-left: 25px;
+}
+
+.header__nav-link {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1em;
+    text-decoration: none;
+    transition: .5s;
+    
+    
+}
+.header__nav-link:hover{
+    color: yellow;
+    transition: 1s;
+    transform: scale(1.1) rotate(-10deg);  
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__title {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.section__content {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+}
+
+#about {
+    background: url("https://sb.ecobnb.net/app/uploads/sites/3/2022/04/copertina-1.jpg") center/cover no-repeat fixed;      
+}
+
+.section__list {
+    list-style: none;
+    font-size: 0.7em;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.section-2{
+    background: url("https://i.pinimg.com/originals/24/92/5f/24925f4d17f896bbdb6e3e7a1ae2394b.jpg") center/cover no-repeat fixed;
+}
+.section-3{
+    background: url("https://wallpaper.dog/large/20481283.png") center/cover no-repeat fixed;
+    
+}
+
+.section__button {
+    font-size: 0.7em;
+    padding: 20px 0;
+    width: 10em;
+    color: #ffffff;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.tour-cards {
+    background: url("https://4kwallpapers.com/images/wallpapers/sunrise-blue-sky-panorama-early-morning-dawn-5k-3840x2160-3644.jpg") center/cover no-repeat fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.tour-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(25% - 2rem);
+    margin: 0 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.tour-card__image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+
+}
+
+.tour-card__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.tour-card__description {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.tour-card__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tour-card__button {
+    font-size: 18px;
+    padding: 20px 0;
+    width: 108px;
+    color: #ffffff;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    transition: .5s;
+}
+.tour-card__button:hover{
+    transition: .5s;
+    background: transparent;
+    color: black;
+}
+.section__button-2{
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 1px 1px 10px white;
+}
+.section__button-3{
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 1px 1px 10px white;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url("https://wallpaper.dog/large/20481283.png") center/cover no-repeat fixed;
+    height: 60px;
+}
+
+.footer__text {
+    color: white;
+    font-size: 1rem;
+}
+@media (max-width: 890px) {
+    .header__title {
+        font-size: 1em;
+    }
+    .header__nav-item {
+        margin-left: 10px;
+    }
+    .tour-cards {
+        padding: 0.5rem;
+    }
+    .tour-card {
+        width: calc(50% - 1rem);
+        margin: 0rem;
+        padding: 0.5rem;
+    }
+    .tour-card__description {
+        font-size: 0.3em;
+        line-height: 1.2;
+        margin-bottom: 0.5em;
+    }
+    .tour-card__button {
+        font-size: 0.5em;
+        padding: 10px;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header__title {
+        font-size: 0.7em;
+    }
+    .header__nav {
+        display: none;
+    }
+    .section {
+        height: 30vh;
+    }
+    .section__content {
+        gap: -20px;
+        width: 100%;
+        font-size: 0.5em;
+    }
+    .section__button {
+        font-size: 1em;
+        padding: 20px 0;
+        width: 15%;
+        
+    }
+    .tour-card {
+        width: calc(100% - 0.5rem);
+        margin: 0;
+        padding: 0.5rem;
+    }
+    .tour-card__image {
+        border-radius: 5px;
+        margin-bottom: 0.3rem;
+    }
+    .tour-card__description {
+        font-size: 0.3em;
+        line-height: 1;
+        margin-bottom: 0.3em;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .section__list {
+        font-size: 0.5em;
+    }
+    .section__button {
+        font-size: 0.6em;
+        padding: 10px 0;
+        min-width: 10%;
+    }
+}
+
+/* Я не зрозумів, що в домашній роботі було, там були мінуси поряд  з числом чи то були тире, чи мінуси і тире були? Напишіть чи я правильно зрозумів коли будете перевіряти домашню роботу. Дякую!*/
